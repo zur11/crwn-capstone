@@ -5,45 +5,46 @@ import './App.css';
 import HomePage from './homepage.component';
 */
 
+import './categories.styles.scss';
+
 const App = () => {
+
+  const categories = [
+    {
+      id: 1,  
+      title: 'Hats', 
+    },
+    {
+      id: 2,  
+      title: 'Jackets', 
+    },
+    {
+      id: 3,  
+      title: 'Sneakers', 
+    },
+    {
+      id: 4,  
+      title: "Women's", 
+    },
+    {
+      id: 5,  
+      title: "Men's", 
+    },
+  ]
+
   return (
     <div className="categories-container">
-            <div className="category-container">
-            {/* <img /> */}
-                <div className="category-body-container">
-                    <h2 className="title">HATS</h2>
-                    <span className="subtitle">SHOP NOW</span>
-                </div>
-            </div>
-            <div className="category-container">
-            {/* <img /> */}
-                <div className="category-body-container">
-                    <h2 className="title">JACKETS</h2>
-                    <span className="subtitle">SHOP NOW</span>
-                </div>
-            </div>
-            <div className="category-container">
-            {/* <img /> */}
-                <div className="category-body-container">
-                    <h2 className="title">SNEAKERS</h2>
-                    <span className="subtitle">SHOP NOW</span>
-                </div>
-            </div>
-            <div className="category-container">
-            {/* <img /> */}
-                <div className="category-body-container">
-                    <h2 className="title">WOMEN'S</h2>
-                    <span className="subtitle">SHOP NOW</span>
-                </div>
-            </div>
-            <div className="category-container">
-            {/* <img /> */}
-                <div className="category-body-container">
-                    <h2 className="title">MEN'S</h2>
-                    <span className="subtitle">SHOP NOW</span>
-                </div>
+
+      {categories.map(({title, id}) => (
+        <div key={id} className="category-container">
+        <div className="background-image" />
+            <div className="category-body-container">
+                <h2>{title}</h2>
+                <p>SHOP NOW</p>
             </div>
         </div>
+      ))}
+    </div>
   );
 }
 
