@@ -5,34 +5,39 @@ import './homepage.styles.scss';
 const HomePage = () => (
 
     <div className="homepage">
-        <div className="directory-menu">
-            <div className="menu-item">
-                <div className="content">
-                    <h1 className="title">HATS</h1>
+        <div className="categories-container">
+            <div className="category-container">
+            {/* <img /> */}
+                <div className="category-body-container">
+                    <h2 className="title">HATS</h2>
                     <span className="subtitle">SHOP NOW</span>
                 </div>
             </div>
-            <div className="menu-item">
-                <div className="content">
-                    <h1 className="title">JACKETS</h1>
+            <div className="category-container">
+            {/* <img /> */}
+                <div className="category-body-container">
+                    <h2 className="title">JACKETS</h2>
                     <span className="subtitle">SHOP NOW</span>
                 </div>
             </div>
-            <div className="menu-item">
-                <div className="content">
-                    <h1 className="title">SNEAKERS</h1>
+            <div className="category-container">
+            {/* <img /> */}
+                <div className="category-body-container">
+                    <h2 className="title">SNEAKERS</h2>
                     <span className="subtitle">SHOP NOW</span>
                 </div>
             </div>
-            <div className="menu-item">
-                <div className="content">
-                    <h1 className="title">WOMEN</h1>
+            <div className="category-container">
+            {/* <img /> */}
+                <div className="category-body-container">
+                    <h2 className="title">WOMEN</h2>
                     <span className="subtitle">SHOP NOW</span>
                 </div>
             </div>
-            <div className="menu-item">
-                <div className="content">
-                    <h1 className="title">MEN</h1>
+            <div className="category-container">
+            {/* <img /> */}
+                <div className="category-body-container">
+                    <h2 className="title">MEN</h2>
                     <span className="subtitle">SHOP NOW</span>
                 </div>
             </div>
