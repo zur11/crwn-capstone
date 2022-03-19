@@ -1,22 +1,27 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
 
-import './App.css';
+import {Routes, Route} from "react-router-dom";
 
-import HomePage from './pages/homepage/homepage.component';
-import ShopPage from './pages/shop/shop.component.jsx';
-import Header from './components/header/header.component';
+import Home from './routes/home/home.component';
+import Navigation from "./routes/navigation/navigation.component";
 
-function App() {
+
+
+const Shop = () => {
+  return <h1>I am the shop page</h1>
+}
+
+const App = () => {
   return (
-    <div>
-      <Header />
-      <Switch>
-        <Route exact path='/' component={HomePage} /> 
-        <Route path='/shop' component={ShopPage} /> 
-      </Switch>
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Home />} />
+        <Route path="shop" element={<Shop />} />
+      </Route>
+    </Routes>
+  ); 
 };
+      
+      
+    
 
 export default App;
